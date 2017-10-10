@@ -10,7 +10,7 @@ public class Microbus extends VehiculoPersona{
 
     @Override
     public double calcularAlquiler(int dias) {
-        double base = 50 * dias;
+        double base = super.calcularAlquiler(dias);
         double alquiler = base + (2 * getPlazas());
         
         return alquiler;

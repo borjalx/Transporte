@@ -24,9 +24,7 @@ public class Furgoneta extends VehiculoCarga{
     @Override
     public double calcularAlquiler(int dias) {
         
-        double base = 50*dias;
-        double carga = 20 * getPMA();
-        double alquiler = base + carga;
+        double alquiler = super.calcularAlquiler(dias);
         
         if(refrigeracion){
             alquiler += 10 * dias;

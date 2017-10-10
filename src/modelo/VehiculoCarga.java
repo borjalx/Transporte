@@ -18,6 +18,13 @@ public abstract class VehiculoCarga extends Vehiculo{
         this.PMA = PMA;
     }
 
-    
+    @Override
+    public double calcularAlquiler(int dias) {
+        
+        double alquilar = super.calcularAlquiler(dias) + (20 * PMA);
+        
+        return alquilar;
+    }
+
     
 }

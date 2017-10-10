@@ -20,5 +20,7 @@ public abstract class Vehiculo {
         this.matricula = matricula;
     }    
     
-    public abstract double calcularAlquiler(int dias);
+    public double calcularAlquiler(int dias){
+        return 50 * dias;
+    }
 }

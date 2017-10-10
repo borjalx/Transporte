@@ -10,7 +10,7 @@ public class Coche extends VehiculoPersona {
     @Override
     public double calcularAlquiler(int dias) {
         
-        double base = 50* dias;
+        double base = super.calcularAlquiler(dias);
         double alquiler = base + (1.5 * getPlazas() * dias);
         
         return alquiler;
